@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <h1><b>Laboratorio 2</b></h1>
+    <p>JavaScript es un lenguaje de programación interpretado que se utiliza principalmente en el desarrollo web 
+        para crear páginas interactivas y dinámicas. Originalmente fue diseñado para ejecutarse en navegadores web 
+        y permitir la manipulación de elementos HTML y CSS. Hoy en día, JavaScript es también utilizado en servidores 
+        (gracias a tecnologías como Node.js), en aplicaciones móviles, de escritorio y en el desarrollo de videojuegos.</p>
+
+    <h2><b>Semejanzas entre Javascript y Java</b></h2>
+    <ul>
+        <li>Sintaxis similar: Ambos lenguajes tienen una sintaxis basada en C, lo que significa que comparten estructuras de control (como if, for, y while) y operadores comunes.</li>
+        <li>Orientación a objetos: Ambos lenguajes soportan la programación orientada a objetos, aunque de manera diferente. Java utiliza clases, mientras que JavaScript utiliza prototipos.</li>
+        <li>Nombre: Aunque sus nombres son similares, esto es solo una coincidencia. JavaScript fue nombrado así en parte para aprovechar la popularidad de Java en ese momento.</li>
+    </ul>
+    <h2><b>Diferencias clave</b></h2>
+    <ul>
+        <li>Propósito y Uso: Java es un lenguaje de programación de propósito general que se utiliza para una amplia gama de aplicaciones, desde aplicaciones móviles (Android) 
+            hasta sistemas empresariales complejos. JavaScript se centra en la web y en la interactividad del usuario en los navegadores, aunque también se usa en otros entornos.</li>
+        <li>Compilación vs Interpretación: Java es un lenguaje compilado que se convierte en bytecode ejecutado en la JVM (Java Virtual Machine). JavaScript es interpretado 
+            directamente en el navegador o en un entorno como Node.js.</li>
+        <li>Tipos de Programación: Java es fuertemente tipado y requiere la declaración de tipos de variables, mientras que JavaScript es débilmente tipado y permite una 
+            mayor flexibilidad en la asignación de tipos a las variables.</li>
+    </ul>
+<p>En resumen, aunque Java y JavaScript comparten una sintaxis similar y algunas características de la programación orientada a objetos, son lenguajes diferentes diseñados para propósitos distintos.</p>
+
+<script>
+    //Punto 2 del laboratorio 2
+var num1 = 50;
+var num2 = 30;
+
+console.log("Suma: " +(num1 + num2));           //Resultado de Suma
+console.log("Resta: " +(num1 - num2));          //Resultado de Resta
+console.log("División: " +(num1 / num2));       //Resultado de División
+console.log("Multiplicación: " +(num1 * num2)); //Resultado de Multiplicación
+
+//Punto 3 del laboratorio 2
+let palabra1 = "Que"
+let palabra2 = "xopa"
+
+console.log (palabra1 +' '+ palabra2);
+
+//Punto 4 del laboratorio 2
+const valor1 = 1;
+const valor2 = "Marca";
+
+console.log("Tipo de dato valor1: "+ typeof valor1);
+console.log("Tipo de dato valor2: "+ typeof valor2);
+
+//Punto 5 del laboratorio 2
+const objeto = {
+    numero: 1000,
+    texto: "Demencia y crimen",
+    boolean: true,
+    objetoVacio: {}
+};
+
+console.log ("Objeto: ", objeto);
+
+//Punto 6 del laboratorio 2
+let multiplo = parseInt(prompt("Escribe un número entero positivo mayor a 10: "), 10);
+
+function sumaMultiplo(multiplo) {
+    let suma = 0;
+    for (let i = 1; i < multiplo; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            suma += i;
+        }
+    }
+    return suma;
+}
+
+console.log("Suma de múltiplos de 3 o 5 menores que " + multiplo + ": " + sumaMultiplo(multiplo));
+</script>
+</body>
+</html>

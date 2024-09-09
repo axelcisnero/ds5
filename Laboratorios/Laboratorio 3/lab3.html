@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 3</title>
+    <script src="lab3.js" defer></script>
+</head>
+<body>
+    <h2><b>Laboratorio 3</b></h2>
+    <p>1. Escribir una función que, dada una cadena "t", retorne si un número es un palíndromo de doble base o no. (Palíndromo en base 10 y base 2). 20pts.</p>
+    <input type="number" id="numero" placeholder="Escribe un número">
+    <button onclick="validar()">Verificar</button>
+    <!-- Sección de respuesta oculta -->
+    <div id="respuesta" style="display:none;">
+        <p id="resultado"></p>
+    </div>
+
+    <p>2. Escribir una función que, dada una cadena "t", retorne la cantidad de caracteres de la cadena. 30pts.</p>
+        <p>a. Ejemplo: Dado AABBBACAA</p>
+            <p>i. Se debería retornar que hay 5 A, 3 B, 1 C. El tipo de dato del retorno es a discreción del estudiante.</p>
+    <input type="text" id="cadena" placeholder="Escribe una cadena">
+    <button onclick="validar()">Verificar</button>
+
+    <!-- Sección de respuesta oculta -->
+    <div id="respuesta2" style="display:none;">
+        <p id="resultado2"></p>
+    </div>
+
+    <p>3. Escribir una función que, dado un año "a", retorne si ese año es bisiesto o no. 20pts.</p>
+    <input type="number" id="anio" placeholder="Escribe un año">
+    <button onclick="validarAnio()">Verificar</button>
+    
+    <!-- Sección de respuesta oculta -->
+    <div id="respuesta3" style="display:none;">
+        <p id="resultado3"></p>
+    </div>
+
+    <p>4. Escribir una función que, dado un número "n", retorne la sumatoria de todos los números primos debajo de ese número.</p>
+        <p>a. Ejemplo: Dado 7</p>
+            <p>i. Se debería retornar 18, ya que: 1 + 2 + 3 + 5 + 7 = 18.</p>
+    <input type="number" id="numeroPrimo" placeholder="Escribe un número">
+    <button onclick="validarPrimos()">Verificar</button>
+    
+    <!-- Sección de respuesta oculta -->
+    <div id="respuesta4" style="display:none;">
+        <p id="resultado4"></p>
+    </div>
+</body>
+</html>
