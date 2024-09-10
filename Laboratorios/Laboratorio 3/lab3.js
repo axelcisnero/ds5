@@ -60,7 +60,7 @@ function contarCaracteres(t) {
     return conteo;
 }
 
-function validar() {
+function validar2() {
     // Obtener el valor del campo de entrada
     let cadena = document.getElementById('cadena').value;
 
